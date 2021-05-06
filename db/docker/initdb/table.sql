@@ -7,7 +7,7 @@ CREATE TABLE users (
     created_at datetime NOT NULL DEFAULT CURRENT_TIMESTAMP
 );
 
-INSERT INTO users(name) VALUES ('JOKER');
+INSERT INTO users(name) VALUES ('JOKER'), ('Jamal');
 
 CREATE TABLE products (
     id int NOT NULL AUTO_INCREMENT PRIMARY KEY,
@@ -20,4 +20,20 @@ CREATE TABLE products (
     ON DELETE CASCADE
 );
 
-INSERT INTO products(user_id, name, price) VALUES (2, 'ball', 300);
+INSERT INTO products(user_id, name, price) VALUES (2, 'ball', 300),  (2, 'food', 200),  (2, 'goal', 400);
+
+CREATE TABLE tags (
+    id int NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    name varchar(100)
+);
+
+INSERT INTO tags(name) VALUES ('basket ball');
+
+CREATE TABLE tags_products (
+    tag_id int NOT NULL,
+    product_id int NOT NULL,
+    FOREIGN KEY (tag_id) REFERENCES tags (id) ON DELETE CASCADE,
+    FOREIGN KEY (product_id) REFERENCES products(id) ON DELETE CASCADE
+);
+
+INSERT INTO tags_products VALUES (1, 1), (1, 2), (1, 3);
