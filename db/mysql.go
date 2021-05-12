@@ -9,3 +9,7 @@ import (
 func NewDBConn() (*sql.DB, error) {
 	return sql.Open("mysql", "root:password@tcp(127.0.0.1:3306)/product")
 }
+
+func NewTestDBConn() (*sql.DB, error) {
+	return sql.Open("mysql", "root:password@tcp(127.0.0.1:3306)/product_test")
+}

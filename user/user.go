@@ -11,6 +11,9 @@ type User struct {
 }
 
 // 引数にconnとると、毎回コネクション渡す必要がある。
+// どうやってrepositoryと分けられるんだろ,,,
+// 1. sql自体を自作
+// interfaceに分ける
 func GetById(conn *sql.DB, userId int) (user User, err error) {
 	row := conn.QueryRow(`SELECT id, name FROM users WHERE id = ?`, userId)
 	var id int

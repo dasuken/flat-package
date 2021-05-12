@@ -1,6 +1,8 @@
 DROP SCHEMA IF EXISTS product_test;
 CREATE SCHEMA product_test;
 
+USE product_test;
+
 CREATE TABLE users (
     id int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
     name varchar(100) NOT NULL,
