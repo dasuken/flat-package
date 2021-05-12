@@ -2,8 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1e01f44e-3350-4fe0-b6fa-a512ea944a25" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/csv-plugin.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/handler/router.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db/docker/initdb/table.sql" beforeDir="false" afterPath="$PROJECT_DIR$/db/docker/initdb/table.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/router/router.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/user.go" beforeDir="false" afterPath="$PROJECT_DIR$/user/user.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,9 +82,10 @@
     <proxy>direct</proxy>
   </component>
   <component name="WindowStateProjectService">
-    <state x="385" y="196" key="search.everywhere.popup" timestamp="1620210749330">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state x="385" y="214" width="670" height="676" key="search.everywhere.popup" timestamp="1620709832095">
+      <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="385" y="196" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1620210749330" />
+    <state x="385" y="214" width="670" height="676" key="search.everywhere.popup/0.23.1440.877@0.23.1440.877" timestamp="1620709832095" />
   </component>
 </project>

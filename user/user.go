@@ -10,6 +10,7 @@ type User struct {
 	CreatedAt string `json:"created_at"`
 }
 
+// 引数にconnとると、毎回コネクション渡す必要がある。
 func GetById(conn *sql.DB, userId int) (user User, err error) {
 	row := conn.QueryRow(`SELECT id, name FROM users WHERE id = ?`, userId)
 	var id int
